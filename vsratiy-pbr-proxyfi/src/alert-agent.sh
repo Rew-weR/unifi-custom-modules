@@ -1,7 +1,19 @@
 #!/bin/bash
 # =========================================================================
-#  UniFi Vsratiy PBR-VPN-PROXYFI — NOTIFICATION AGENT
+#  UniFi Vsratiy PBR-VPN-PROXYFI — MASTER INSTALLER
 # =========================================================================
+
+# =========================================================================
+#  Project: UniFi Vsratiy PBR-VPN-PROXYFI
+#  File:    alert-agent.sh
+#  Desc:    Alerting Agent
+#  Author:  Rew-weR
+#  Date:    2026-06-08
+# =========================================================================
+
+# Установка режима безопасного выполнения (остановка при ошибке)
+set -e
+
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 MODULE_DIR="/data/unifi-custom-modules/vsratiy-pbr-proxyfi"

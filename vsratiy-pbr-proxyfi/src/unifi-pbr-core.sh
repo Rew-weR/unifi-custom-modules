@@ -1,7 +1,19 @@
 #!/bin/bash
 # =========================================================================
-#  UniFi Vsratiy PBR-VPN-PROXYFI — CORE ENGINE (Immortal Edition)
+#  UniFi Vsratiy PBR-VPN-PROXYFI — MASTER INSTALLER
 # =========================================================================
+
+# =========================================================================
+#  Project: UniFi Vsratiy PBR-VPN-PROXYFI
+#  File:    unifi-pbr-core.sh
+#  Desc:    Core PBR Script
+#  Author:  Rew-weR
+#  Date:    2026-06-08
+# =========================================================================
+
+# Установка режима безопасного выполнения (остановка при ошибке)
+set -e
+
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 MODULE_DIR="/data/unifi-custom-modules/vsratiy-pbr-proxyfi"

@@ -1,7 +1,19 @@
 #!/bin/bash
 # =========================================================================
-#  UniFi Vsratiy PBR-VPN-PROXYFI — UNINSTALLER
+#  UniFi Vsratiy PBR-VPN-PROXYFI — MASTER INSTALLER
 # =========================================================================
+
+# =========================================================================
+#  Project: UniFi Vsratiy PBR-VPN-PROXYFI
+#  File:    uninstall.sh
+#  Desc:    Module UnInstaller
+#  Author:  Rew-weR
+#  Date:    2026-06-08
+# =========================================================================
+
+# Установка режима безопасного выполнения (остановка при ошибке)
+set -e
+
 MODULE_DIR="/data/unifi-custom-modules/vsratiy-pbr-proxyfi"
 
 if [ "$EUID" -ne 0 ]; then echo "Ошибка: Нужен root."; exit 1; fi

@@ -1,0 +1,13 @@
+[Unit]
+Description=UniFi Vsratiy PBR-VPN-PROXYFI Engine
+After=network.target dnsmasq.service
+Before=unifi-core.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/data/unifi-custom-modules/vsratiy-pbr-proxyfi/unifi-pbr-core.sh start
+ExecStop=/data/unifi-custom-modules/vsratiy-pbr-proxyfi/unifi-pbr-core.sh stop
+
+[Install]
+WantedBy=multi-user.target
